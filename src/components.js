@@ -2,42 +2,42 @@
 const components = {
     navbar: `
     <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="main-nav">
-        <div class="container mx-auto px-2 sm:px-6 py-4">
-            <div class="flex items-center justify-between bg-card/70 backdrop-blur-md px-4 sm:px-6 py-3 rounded-2xl shadow-sm border border-white/20">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between bg-card/70 backdrop-blur-md px-6 py-3 rounded-2xl shadow-sm border border-white/20">
                 <!-- Logo -->
-                <a href="/" class="flex items-center gap-2 shrink-0">
-                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white shrink-0">
+                <a href="/" class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white">
                         <i data-lucide="paw-print"></i>
                     </div>
-                    <span class="font-heading text-xl font-bold tracking-tight hidden sm:block">Paw<span class="text-primary">esome</span></span>
+                    <span class="font-heading text-xl font-bold tracking-tight">Paw<span class="text-primary">esome</span></span>
                 </a>
 
                 <!-- Desktop Menu -->
-                <div class="hidden lg:flex items-center gap-8 font-medium">
-                    <a href="./index.html" class="hover:text-primary transition-colors">Home</a>
-                    <a href="../pages/home2.html" class="hover:text-primary transition-colors">Home 2</a>
-                    <a href="../pages/about.html" class="hover:text-primary transition-colors">About</a>
-                    <a href="../pages/service.html" class="hover:text-primary transition-colors">Services</a>
-                    <a href="../pages/blog.html" class="hover:text-primary transition-colors">Blog</a>
-                    <a href="../pages/contact.html" class="hover:text-primary transition-colors">Contact</a>
+                <div class="hidden md:flex items-center gap-8 font-medium">
+                    <a href="/index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="/pages/home.html" class="hover:text-primary transition-colors">Home 2</a>
+                    <a href="/pages/about.html" class="hover:text-primary transition-colors">About</a>
+                    <a href="/pages/service.html" class="hover:text-primary transition-colors">Services</a>
+                    <a href="/pages/blog.html" class="hover:text-primary transition-colors">Blog</a>
+                    <a href="/pages/contact.html" class="hover:text-primary transition-colors">Contact</a>
                 </div>
 
                 <!-- Tools & CTA -->
-                <div class="flex items-center gap-1 sm:gap-3">
+                <div class="flex items-center gap-3">
                     <!-- Theme Toggle -->
-                    <button id="theme-toggle" class="p-2 hover:bg-primary/10 rounded-xl transition-colors text-dark/70" title="Toggle Theme">
-                        <i data-lucide="sun" class="hidden dark:block w-5 h-5 sm:w-6 sm:h-6"></i>
-                        <i data-lucide="moon" class="block dark:hidden w-5 h-5 sm:w-6 sm:h-6"></i>
+                    <button id="theme-toggle" class="p-2.5 hover:bg-primary/10 rounded-xl transition-colors text-dark/70" title="Toggle Theme">
+                        <i data-lucide="sun" class="hidden dark:block"></i>
+                        <i data-lucide="moon" class="block dark:hidden"></i>
                     </button>
                     <!-- RTL Toggle -->
-                    <button id="rtl-toggle" class="p-2 hover:bg-primary/10 rounded-xl transition-colors text-dark/70 font-bold text-xs" title="Toggle RTL">
+                    <button id="rtl-toggle" class="p-2.5 hover:bg-primary/10 rounded-xl transition-colors text-dark/70 font-bold text-xs" title="Toggle RTL">
                         LTR
                     </button>
 
                     <!-- Profile Dropdown -->
                     <div class="relative" id="profile-dropdown-container">
-                        <button id="profile-btn" class="p-2 hover:bg-primary/10 rounded-xl transition-colors text-dark/70" title="Account">
-                            <i data-lucide="user" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+                        <button id="profile-btn" class="p-2.5 hover:bg-primary/10 rounded-xl transition-colors text-dark/70" title="Account">
+                            <i data-lucide="user"></i>
                         </button>
                         <!-- Dropdown Menu -->
                         <div id="profile-menu" class="absolute right-0 mt-3 w-56 bg-card border border-dark/5 rounded-2xl shadow-2xl py-2 hidden animate-in fade-in zoom-in duration-200">
@@ -58,21 +58,10 @@ const components = {
                         Book Now
                     </a>
                     <!-- Mobile Menu Toggle -->
-                    <button id="mobile-menu-btn" class="lg:hidden p-2 hover:bg-primary/10 rounded-lg transition-colors">
-                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    <button class="md:hidden p-2 hover:bg-primary/10 rounded-lg transition-colors">
+                        <i data-lucide="menu"></i>
                     </button>
                 </div>
-            </div>
-
-            <!-- Mobile Menu Dropdown -->
-            <div id="mobile-menu" class="hidden lg:hidden absolute top-20 bg-card border border-dark/5 shadow-2xl rounded-2xl p-6 flex flex-col gap-4 font-medium text-center z-40 origin-top animate-in fade-in zoom-in-95 duration-200" style="left: 1rem; right: 1rem; width: calc(100% - 2rem);">
-                <a href="./index.html" class="block py-2 hover:text-primary transition-colors">Home</a>
-                <a href="./pages/home.html" class="block py-2 hover:text-primary transition-colors">Home 2</a>
-                <a href="./pages/about.html" class="block py-2 hover:text-primary transition-colors">About</a>
-                <a href="./pages/service.html" class="block py-2 hover:text-primary transition-colors">Services</a>
-                <a href="./pages/blog.html" class="block py-2 hover:text-primary transition-colors">Blog</a>
-                <a href="./pages/contact.html" class="block py-2 hover:text-primary transition-colors">Contact</a>
-                <a href="./pages/booking.html" class="sm:hidden block py-3 mt-2 bg-primary text-white rounded-xl hover:bg-primary-dark transition-colors">Book Now</a>
             </div>
         </div>
     </nav>
@@ -167,7 +156,7 @@ function initApp() {
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
         if (!href) return;
-        
+
         // Check if the link href matches the current path
         const isExactMatch = currentPath.endsWith(href) || (currentPath.endsWith('/') && href.endsWith('index.html'));
         const isBlogDetail = currentPath.includes('/blogs/') && href.includes('blog.html');
@@ -206,7 +195,7 @@ function initApp() {
     }
 
     // Apply saved preferences
-    if (localStorage.getItem('theme') === 'dark' || 
+    if (localStorage.getItem('theme') === 'dark' ||
         (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
     }
@@ -218,7 +207,7 @@ function initApp() {
     // Profile Dropdown Logic
     const profileBtn = document.getElementById('profile-btn');
     const profileMenu = document.getElementById('profile-menu');
-    
+
     if (profileBtn && profileMenu) {
         profileBtn.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -229,34 +218,6 @@ function initApp() {
         document.addEventListener('click', (e) => {
             if (!profileMenu.contains(e.target) && !profileBtn.contains(e.target)) {
                 profileMenu.classList.add('hidden');
-            }
-        });
-    }
-
-    // Mobile Menu Toggle Logic
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            mobileMenu.classList.toggle('hidden');
-            // Toggle icon between menu and x
-            const icon = mobileMenuBtn.querySelector('i');
-            if (mobileMenu.classList.contains('hidden')) {
-                icon.setAttribute('data-lucide', 'menu');
-            } else {
-                icon.setAttribute('data-lucide', 'x');
-            }
-            lucide.createIcons();
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-                mobileMenu.classList.add('hidden');
-                mobileMenuBtn.querySelector('i').setAttribute('data-lucide', 'menu');
-                lucide.createIcons();
             }
         });
     }
