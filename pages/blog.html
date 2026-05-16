@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pawesome Blog | Pet Tips & News</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-accent-cream text-dark antialiased">
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section class="pt-48 pb-20 bg-accent-sage/10 relative">
+             <div class="absolute inset-0 opacity-20">
+                <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&fit=crop&w=1200&q=80" alt="About Hero" class="w-full h-full object-cover">
+            </div>
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-6xl font-heading font-bold mb-6">Pawesome <span class="text-primary italic">Journal</span></h1>
+                <p class="text-xl text-dark/60 max-w-2xl mx-auto">Expert advice, heartwarming stories, and the latest trends in the pet care world.</p>
+                
+                <!-- Search/Filter -->
+                <div class="mt-12 max-w-xl mx-auto relative">
+                    <input type="text" placeholder="Search articles..." class="w-full bg-card px-8 py-4 rounded-full border border-dark/5 outline-none focus:ring-4 ring-primary/10 transition-all">
+                    <i data-lucide="search" class="absolute right-6 top-1/2 -translate-y-1/2 text-primary"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Featured Article -->
+        <section class="py-24">
+            <div class="container mx-auto px-6">
+                <div onclick="window.location.href='summer-pet-care.html'" class="relative group cursor-pointer overflow-hidden rounded-[3rem] bg-[#1a1a1a] dark:bg-card  flex flex-col lg:flex-row items-center border border-transparent dark:border-white/10 shadow-2xl">
+    <div class="w-full lg:w-1/2 h-96 lg:h-full relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=1200" alt="Featured Post" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80">
+    </div>
+    <div class="w-full lg:w-1/2 p-12 lg:p-20 space-y-6">
+        <div class="flex items-center gap-4 text-primary text-sm font-bold uppercase tracking-widest">
+            <span>Featured</span>
+            <span class="w-1 h-1 bg-white/20 rounded-full"></span>
+            <span>May 15, 2024</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-heading font-bold leading-tight">10 Tips for Keeping Your Dog Cool This Summer</h2>
+        <p class="text-lg leading-relaxed">As temperatures rise, our furry friends need extra attention to stay safe and hydrated. Learn the best practices for summer pet care...</p>
+        <div class="flex items-center gap-4 pt-4">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=100" alt="Author" class="w-12 h-12 rounded-full border-2 border-primary">
+            <div>
+                <h5 class="font-bold">Dr. Sarah Jenkins</h5>
+                <p class="text-white/40 text-xs">Lead Veterinarian</p>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </section>
+
+        <!-- Section 3: Article Grid -->
+        <section class="py-24 bg-card">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <!-- Post 1 -->
+                    <article class="group">
+                        <div class="relative overflow-hidden rounded-[2.5rem] mb-6 aspect-[4/3]">
+                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=600" alt="Post 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-bold text-primary">Nutrition</div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="text-dark/40 text-sm font-bold uppercase">April 28, 2024</div>
+                            <h3 class="text-2xl font-bold group-hover:text-primary transition-colors leading-snug">The Best Diet for Your Indoor Cat</h3>
+                            <p class="text-dark/60 line-clamp-2">Choosing the right food for your cat involves more than just picking a flavor. Here's what the experts recommend...</p>
+                            <a href="./indoor-cat-diet.html" class="inline-flex items-center gap-2 font-bold text-primary">Read More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </article>
+                    <!-- Post 2 -->
+                    <article class="group">
+                        <div class="relative overflow-hidden rounded-[2.5rem] mb-6 aspect-[4/3]">
+                            <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&q=80&w=600" alt="Post 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-bold text-primary">Training</div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="text-dark/40 text-sm font-bold uppercase">April 15, 2024</div>
+                            <h3 class="text-2xl font-bold group-hover:text-primary transition-colors leading-snug">Positive Reinforcement vs. Traditional Training</h3>
+                            <p class="text-dark/60 line-clamp-2">Understand the science behind modern dog training methods and why kindness always wins...</p>
+                            <a href="positive-reinforcement-training.html" class="inline-flex items-center gap-2 font-bold text-primary">Read More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </article>
+                    <!-- Post 3 -->
+                    <article class="group">
+                        <div class="relative overflow-hidden rounded-[2.5rem] mb-6 aspect-[4/3]">
+                            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1200&q=80" alt="Post 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-bold text-primary">Health</div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="text-dark/40 text-sm font-bold uppercase">March 30, 2024</div>
+                            <h3 class="text-2xl font-bold group-hover:text-primary transition-colors leading-snug">Signs Your Senior Pet Needs a Vet Visit</h3>
+                            <p class="text-dark/60 line-clamp-2">As pets age, their needs change. Learn to spot the subtle signs of discomfort in your elderly companions...</p>
+                            <a href="senior-pet-health.html" class="inline-flex items-center gap-2 font-bold text-primary">Read More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Categories/Trending (Sidebar feel in horizontal grid) -->
+        <section class="py-24 bg-accent-cream">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div class="space-y-8">
+                        <h2 class="text-3xl font-heading font-bold">Browse Categories</h2>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="#" class="p-6 bg-card rounded-2xl flex items-center justify-between group hover:bg-primary transition-all">
+                                <span class="font-bold group-hover:text-white">Pet Health</span>
+                                <span class="text-primary group-hover:text-white">12</span>
+                            </a>
+                            <a href="#" class="p-6 bg-card rounded-2xl flex items-center justify-between group hover:bg-accent-teal transition-all">
+                                <span class="font-bold group-hover:text-white">Behavior</span>
+                                <span class="text-accent-teal group-hover:text-white">08</span>
+                            </a>
+                            <a href="#" class="p-6 bg-card rounded-2xl flex items-center justify-between group hover:bg-accent-sage transition-all">
+                                <span class="font-bold group-hover:text-white">Grooming</span>
+                                <span class="text-accent-sage group-hover:text-white">15</span>
+                            </a>
+                            <a href="#" class="p-6 bg-card rounded-2xl flex items-center justify-between group hover:bg-dark transition-all">
+                                <span class="font-bold group-hover:text-white">Pet Tech</span>
+                                <span class="text-dark group-hover:text-white">05</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <h2 class="text-3xl font-heading font-bold">Trending Now</h2>
+                        <div class="space-y-6">
+                            <div onclick="window.location.href='./pet-insurance-guide.html'" class="flex gap-6 items-center group cursor-pointer">
+                                <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&q=80&w=150" class="w-20 h-20 rounded-2xl object-cover shrink-0">
+                                <div>
+                                    <h4 class="font-bold group-hover:text-primary transition-colors">How to choose the perfect pet insurance for your dog</h4>
+                                    <p class="text-dark/40 text-xs mt-1 uppercase font-bold tracking-tighter">5 Min Read</p>
+                                </div>
+                            </div>
+                            <div onclick="window.location.href='./toxic-plants-safety.html'" class="flex gap-6 items-center group cursor-pointer">
+                                <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?auto=format&fit=crop&q=80&w=150" class="w-20 h-20 rounded-2xl object-cover shrink-0">
+                                <div>
+                                    <h4 class="font-bold group-hover:text-primary transition-colors">Spring safety: Common garden plants toxic to cats</h4>
+                                    <p class="text-dark/40 text-xs mt-1 uppercase font-bold tracking-tighter">8 Min Read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../src/components.js"></script>
+</body>
+
+</html>

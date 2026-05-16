@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 230 126 34;    /* #E67E22 */
+    --primary-light: 255 179 71;
+    --primary-dark: 211 84 0;
+    
+    --bg-main: 244 241 222;   /* #F4F1DE - Cream */
+    --bg-card: 255 255 255;
+    --text-main: 45 52 54;    /* #2D3436 - Dark */
+    --text-muted: 45 52 54 / 0.6;
+    
+    --accent-teal: 22 160 133;
+    --accent-sage: 163 177 138;
+    --bg-dark-fixed: 45 52 54; /* Stays dark even in dark mode */
+  }
+
+  .dark {
+    --bg-main: 10 10 10;      /* Near pure black */
+    --bg-card: 22 22 22;      /* Dark surface */
+    --text-main: 235 235 235; /* Crisp white */
+    --text-muted: 235 235 235 / 0.6;
+    --accent-teal: 29 209 161;
+    --accent-sage: 142 158 116;
+    --border: 255 255 255 / 0.1;
+    --bg-dark-fixed: 18 18 18; /* Deep dark for dark mode sections */
+  }
+
+  /* Dark mode global overrides for hardcoded classes */
+  .dark .bg-white { @apply bg-card; }
+  .dark .text-dark { @apply text-main; }
+  .dark .border-dark\/5 { border-color: rgba(var(--border)); }
+  .dark .border-dark\/10 { border-color: rgba(255, 255, 255, 0.15); }
+  .dark .bg-accent-cream { background-color: rgb(var(--bg-main)); }
+  .dark .bg-accent-sage\/10 { background-color: rgba(var(--accent-sage) / 0.15); }
+  .dark .bg-primary\/5 { background-color: rgba(var(--primary) / 0.1); }
+  .dark .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5); }
+  .dark .shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.7); }
+
+  /* Typography dark mode support */
+  .dark .prose { @apply prose-invert; }
+  
+  /* Button contrast fixes */
+  .dark .bg-primary { @apply shadow-primary/10; }
+  .dark button:hover:not(.bg-primary) { @apply bg-white/5; }
+
+  body {
+    @apply font-body antialiased transition-colors duration-300;
+    background-color: rgb(var(--bg-main));
+    color: rgb(var(--text-main));
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  /* RTL Support */
+  [dir="rtl"] {
+    @apply text-right;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 md:px-8;
+  }
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawesome | Premium Pet Spa & Care</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- Lucide Icons for modern UI -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-accent-cream text-dark antialiased transition-colors duration-300">
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Center Hero Section -->
+    <main>
+        <section class="relative pt-48 pb-32 px-6 flex flex-col items-center justify-center text-center overflow-hidden">
+            <!-- Background Decoration -->
+            <div class="absolute inset-0 -z-10">
+                <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 right-1/4 w-[30rem] h-[30rem] bg-accent-teal/5 rounded-full blur-3xl"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="max-w-4xl space-y-10">
+                <div class="space-y-4">
+                    <h1 class="text-6xl md:text-8xl font-heading font-extrabold tracking-tight leading-none">
+                        Your Pet's <span class="text-primary underline decoration-accent-sage decoration-8 underline-offset-8">Happy</span> Place.
+                    </h1>
+                    <p class="text-xl text-dark/60 max-w-2xl mx-auto">
+                        Search and book the highest-rated pet sitters, groomers, and vets in your neighborhood.
+                    </p>
+                </div>
+
+                <!-- Modern Search Bar -->
+                <div class="bg-card p-2 rounded-[2.5rem] shadow-2xl border border-dark/5 dark:border-white/10 flex flex-col md:flex-row items-center gap-2 max-w-3xl mx-auto ring-8 ring-primary/5">
+                    <div class="flex items-center gap-3 px-6 py-3 w-full border-b md:border-b-0 md:border-r border-dark/10">
+                        <i data-lucide="search" class="text-primary"></i>
+                        <input type="text" placeholder="What service do you need?" class="bg-transparent outline-none w-full font-medium">
+                    </div>
+                    <div class="flex items-center gap-3 px-6 py-3 w-full">
+                        <i data-lucide="map-pin" class="text-primary"></i>
+                        <input type="text" placeholder="Your Location" class="bg-transparent outline-none w-full font-medium">
+                    </div>
+                    <button class="bg-primary text-white w-full md:w-auto px-10 py-4 rounded-full font-bold hover:bg-primary-dark transition-all whitespace-nowrap">
+                        Find Care
+                    </button>
+                </div>
+
+                <!-- Quick Tags -->
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-card dark:bg-white/5 border border-dark/5 dark:border-white/10 rounded-full text-sm font-bold text-dark/70 dark:text-white/70 cursor-pointer hover:bg-primary/10 hover:text-primary transition-all">#DogGrooming</span>
+                    <span class="px-4 py-2 bg-card dark:bg-white/5 border border-dark/5 dark:border-white/10 rounded-full text-sm font-bold text-dark/70 dark:text-white/70 cursor-pointer hover:bg-primary/10 hover:text-primary transition-all">#CatSitting</span>
+                    <span class="px-4 py-2 bg-card dark:bg-white/5 border border-dark/5 dark:border-white/10 rounded-full text-sm font-bold text-dark/70 dark:text-white/70 cursor-pointer hover:bg-primary/10 hover:text-primary transition-all">#VetConsult</span>
+                    <span class="px-4 py-2 bg-card dark:bg-white/5 border border-dark/5 dark:border-white/10 rounded-full text-sm font-bold text-dark/70 dark:text-white/70 cursor-pointer hover:bg-primary/10 hover:text-primary transition-all">#PuppyTraining</span>
+                </div>
+            </div>
+
+            <!-- Floating Pet Images (Decorative) -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl">
+                <div class="h-64 rounded-[3rem] overflow-hidden shadow-lg rotate-6 hover:rotate-0 transition-all duration-500">
+                    <img src="assets/images/box1.jpg" class="w-full h-full object-cover" alt="Cute Dog">
+                </div>
+                <div class="h-80 rounded-[3rem] overflow-hidden shadow-lg -rotate-3 hover:rotate-0 transition-all duration-500 translate-y-8">
+                    <img src="assets/images/box2.jpg" class="w-full h-full object-cover" alt="Cute Cat">
+                </div>
+                <div class="h-64 rounded-[3rem] overflow-hidden shadow-lg rotate-12 hover:rotate-0 transition-all duration-500">
+                    <img src="assets/images/box3.jpg" class="w-full h-full object-cover" alt="Happy Dog">
+                </div>
+                <div class="h-72 rounded-[3rem] overflow-hidden shadow-lg -rotate-6 hover:rotate-0 transition-all duration-500 translate-y-4">
+                    <img src="assets/images/box4.jpg" class="w-full h-full object-cover" alt="Pets">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Section 2: Top Services Grid -->
+    <section class="py-24 bg-accent-cream/30">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl font-heading font-bold">What are you <span class="text-primary italic">looking</span> for?</h2>
+                <p class="text-dark/40 max-w-xl mx-auto">Explore our most popular pet care categories and find the perfect match.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="bg-card p-6 rounded-[2rem] border border-dark/5 dark:border-white/10 shadow-sm text-center space-y-4 hover:border-primary transition-all cursor-pointer group">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto group-hover:bg-primary group-hover:text-white transition-all">
+                        <i data-lucide="scissors"></i>
+                    </div>
+                    <span class="font-bold text-sm">Grooming</span>
+                </div>
+                <div class="bg-card p-6 rounded-[2rem] border border-dark/5 dark:border-white/10 shadow-sm text-center space-y-4 hover:border-accent-teal transition-all cursor-pointer group">
+                    <div class="w-12 h-12 bg-accent-teal/10 rounded-xl flex items-center justify-center text-accent-teal mx-auto group-hover:bg-accent-teal group-hover:text-white transition-all">
+                        <i data-lucide="home"></i>
+                    </div>
+                    <span class="font-bold text-sm">Boarding</span>
+                </div>
+                <div class="bg-card p-6 rounded-[2rem] border border-dark/5 dark:border-white/10 shadow-sm text-center space-y-4 hover:border-accent-sage transition-all cursor-pointer group">
+                    <div class="w-12 h-12 bg-accent-sage/10 rounded-xl flex items-center justify-center text-accent-sage mx-auto group-hover:bg-accent-sage group-hover:text-white transition-all">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <span class="font-bold text-sm">Training</span>
+                </div>
+                <div class="bg-card p-6 rounded-[2rem] border border-dark/5 dark:border-white/10 shadow-sm text-center space-y-4 hover:border-primary transition-all cursor-pointer group">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto group-hover:bg-primary group-hover:text-white transition-all">
+                        <i data-lucide="stethoscope"></i>
+                    </div>
+                    <span class="font-bold text-sm">Veterinary</span>
+                </div>
+                <div class="bg-card p-6 rounded-[2rem] border border-dark/5 dark:border-white/10 shadow-sm text-center space-y-4 hover:border-accent-teal transition-all cursor-pointer group">
+                    <div class="w-12 h-12 bg-accent-teal/10 rounded-xl flex items-center justify-center text-accent-teal mx-auto group-hover:bg-accent-teal group-hover:text-white transition-all">
+                        <i data-lucide="shopping-bag"></i>
+                    </div>
+                    <span class="font-bold text-sm">Pharmacy</span>
+                </div>
+                <div class="bg-card p-6 rounded-[2rem] border border-dark/5 dark:border-white/10 shadow-sm text-center space-y-4 hover:border-accent-sage transition-all cursor-pointer group">
+                    <div class="w-12 h-12 bg-accent-sage/10 rounded-xl flex items-center justify-center text-accent-sage mx-auto group-hover:bg-accent-sage group-hover:text-white transition-all">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <span class="font-bold text-sm">Adoption</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Features / Why Us -->
+    <section id="features" class="py-24 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="relative">
+                    <div class="rounded-[3rem] overflow-hidden shadow-2xl relative z-10">
+                        <img src="assets/images/bg.jpg" alt="Features">
+                    </div>
+                    <!-- Decorative floating card -->
+                    <div class="absolute -right-8 top-1/2 -translate-y-1/2 bg-card p-6 rounded-3xl shadow-2xl z-20 border border-dark/5 space-y-4 max-w-[200px]">
+                        <div class="flex -space-x-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" class="w-10 h-10 rounded-full border-2 border-white">
+                            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-[10px] font-bold text-white border-2 border-white">+5k</div>
+                        </div>
+                        <p class="text-xs font-bold text-dark/60 leading-tight">Join our growing community of happy pets.</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-10">
+                    <div class="space-y-4 text-center lg:text-left">
+                        <h2 class="text-4xl md:text-5xl font-heading font-bold leading-tight">We're More Than Just a <span class="text-primary italic">Pet Spa</span>.</h2>
+                        <p class="text-dark/60 text-lg">We create a home away from home where every tail wag matters.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+                                <i data-lucide="shield-check" class="text-primary w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Fully Insured</h4>
+                                <p class="text-xs text-dark/40">Complete peace of mind for every parent.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+                                <i data-lucide="clock" class="text-primary w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">24/7 Support</h4>
+                                <p class="text-xs text-dark/40">Always here when you and your pet need us.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+                                <i data-lucide="video" class="text-primary w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Live Updates</h4>
+                                <p class="text-xs text-dark/40">Watch your pets play via our mobile app.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+                                <i data-lucide="heart" class="text-primary w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Expert Care</h4>
+                                <p class="text-xs text-dark/40">Certified groomers and veterinarians.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Testimonials Bento -->
+    <section class="py-24 bg-[#1a1a1a] dark:bg-card rounded-[4rem] mx-6 border border-transparent dark:border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl font-heading font-bold">Trusted by <span class="text-primary italic">Pet Parents</span></h2>
+                <p>Real stories from our Pawesome family.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+                <div class="md:col-span-3 bg-white/5 p-8 rounded-[2.5rem] border border-white/10 space-y-6">
+                    <p class="text-xl font-medium leading-relaxed italic">"Pawesome has completely changed the way I care for my Golden Retriever. The updates are amazing!"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" class="w-12 h-12 rounded-full border-2 border-primary">
+                        <div>
+                            <h5 class="font-bold">Emily Watson</h5>
+                            <p class="text-[10px] text-white/40 uppercase font-bold tracking-widest">Co-Founder, PetLove</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-3 bg-primary p-8 rounded-[2.5rem] space-y-6 text-white">
+                    <p class="text-xl font-medium leading-relaxed italic">"The emergency service saved our cat's life at 3 AM. Truly grateful for the team's quick response."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" class="w-12 h-12 rounded-full border-2 border-white">
+                        <div>
+                            <h5 class="font-bold">David Miller</h5>
+                            <p class="text-[10px] text-white/20 uppercase font-bold tracking-widest">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-2 bg-white/5 p-8 rounded-[2.5rem] border border-white/10">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 text-primary fill-primary"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-primary fill-primary"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-primary fill-primary"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-primary fill-primary"></i>
+                        <i data-lucide="star" class="w-4 h-4 text-primary fill-primary"></i>
+                    </div>
+                    <p class="text-sm">"Best grooming experience ever! 10/10."</p>
+                </div>
+                <div class="md:col-span-4 bg-accent-teal/10 p-8 rounded-[2.5rem] border border-white/5 flex items-center justify-between gap-8">
+                    <p class="text-lg font-bold leading-tight">Join 500+ users who gave us a 5-star rating this month.</p>
+                    <button class="bg-white text-dark px-6 py-3 rounded-2xl font-bold text-sm whitespace-nowrap">Read All Reviews</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: CTA -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="bg-primary/5 rounded-[4rem] p-12 md:p-24 text-center relative overflow-hidden">
+                <div class="absolute -top-20 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+                <div class="relative z-10 max-w-2xl mx-auto space-y-8">
+                    <h2 class="text-4xl md:text-6xl font-heading font-bold text-dark dark:text-white">Ready to Give Your Pet the <span class="text-primary italic">Best</span>?</h2>
+                    <p class="text-dark/60 dark:text-white/60 text-lg">Book your first session today and get 20% off with code <span class="font-bold text-primary">PAWFIRST</span>.</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <button class="bg-primary text-white px-10 py-5 rounded-2xl font-bold shadow-xl shadow-primary/20 hover:bg-primary-dark transition-all scale-105">Book Appointment</button>
+                        <button class="bg-card text-dark border border-dark/5 px-10 py-5 rounded-2xl font-bold hover:bg-white transition-all">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="./src/components.js"></script>
+</body>
+
+</html>

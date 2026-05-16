@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pawesome Pet Care</title>
+    <link rel="stylesheet" href="../dist/output.css">
+     <!-- Lucide Icons for modern UI -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-accent-cream text-dark antialiased">
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section class="pt-48 pb-20 relative overflow-hidden text-center">
+             <div class="absolute inset-0 opacity-20">
+                <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&w=1200&q=80" alt="About Hero" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="container mx-auto px-6">
+                <h1 class="text-6xl font-heading font-bold mb-6">Let's <span class="text-primary underline decoration-accent-teal decoration-8">Connect</span></h1>
+                <p class="text-xl text-dark/60 max-w-2xl mx-auto">Have a question or want to book a tour? We're here to help you and your pet every step of the way.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Contact Info Cards -->
+        <section class="py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-card p-10 rounded-[3rem] text-center border border-dark/5 shadow-sm hover:shadow-xl transition-all">
+                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2">Call Us</h4>
+                        <p class="text-dark/60">+1 (555) 000-PAWS</p>
+                        <p class="text-dark/60">Mon-Fri: 8am - 8pm</p>
+                    </div>
+                    <div class="bg-card p-10 rounded-[3rem] text-center border border-dark/5 shadow-sm hover:shadow-xl transition-all">
+                        <div class="w-14 h-14 bg-accent-teal/10 text-accent-teal rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2">Email Us</h4>
+                        <p class="text-dark/60">hello@pawesome.care</p>
+                        <p class="text-dark/60">Support: 24/7</p>
+                    </div>
+                    <div class="bg-card p-10 rounded-[3rem] text-center border border-dark/5 shadow-sm hover:shadow-xl transition-all">
+                        <div class="w-14 h-14 bg-accent-sage/10 text-accent-sage rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <h4 class="font-bold text-xl mb-2">Visit Us</h4>
+                        <p class="text-dark/60">123 Pet Lane, Waggington</p>
+                        <p class="text-dark/60">State of Joy, 56789</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Contact Form & Map Split -->
+        <section class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="bg-card rounded-[4rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+                    <!-- Form Side -->
+                    <div class="w-full lg:w-1/2 p-12 md:p-20 space-y-10">
+                        <div>
+                            <h2 class="text-4xl font-heading font-bold mb-4">Send a Message</h2>
+                            <p class="text-dark/60 font-medium">We usually respond within 2 hours.</p>
+                        </div>
+                        
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold uppercase tracking-widest text-dark/40">Full Name</label>
+                                    <input type="text" placeholder="John Doe" class="w-full bg-accent-cream px-6 py-4 rounded-2xl border border-dark/5 outline-none focus:border-primary transition-all">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold uppercase tracking-widest text-dark/40">Email Address</label>
+                                    <input type="email" placeholder="john@example.com" class="w-full bg-accent-cream px-6 py-4 rounded-2xl border border-dark/5 outline-none focus:border-primary transition-all">
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold uppercase tracking-widest text-dark/40">Subject</label>
+                                <select class="w-full bg-accent-cream px-6 py-4 rounded-2xl border border-dark/5 outline-none focus:border-primary transition-all appearance-none">
+                                    <option>General Inquiry</option>
+                                    <option>Booking Question</option>
+                                    <option>Emergency Service</option>
+                                    <option>Career Opportunity</option>
+                                </select>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold uppercase tracking-widest text-dark/40">Message</label>
+                                <textarea rows="4" placeholder="How can we help you?" class="w-full bg-accent-cream px-6 py-4 rounded-2xl border border-dark/5 outline-none focus:border-primary transition-all resize-none"></textarea>
+                            </div>
+                            <button class="w-full bg-primary text-white py-5 rounded-2xl font-bold shadow-xl shadow-primary/20 hover:bg-primary-dark transition-all">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <!-- Map Side -->
+                    <div class="w-full lg:w-1/2 min-h-[400px] bg-accent-sage/20 relative overflow-hidden">
+                        <!-- Placeholder for actual map -->
+                        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=1200" alt="Map Placeholder" class="w-full h-full object-cover grayscale">
+                        <div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+                        <!-- Custom Marker -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-bounce">
+                            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
+                                <i data-lucide="paw-print"></i>
+                            </div>
+                            <span class="font-bold">Pawesome HQ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Social Connect -->
+        <section class="py-24 overflow-hidden relative">
+             <div class="absolute inset-0 opacity-20">
+                <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&w=1200&q=80" alt="About Hero" class="w-full h-full object-cover">
+            </div>
+            <div class="container mx-auto px-6 text-center space-y-12 relative z-10">
+                <h2 class="text-4xl font-heading font-bold leading-tight">Follow Our <span class="text-primary">Happy</span> Tails</h2>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <a href="#" class="group flex flex-col items-center gap-4">
+                        <div class="w-24 h-24 rounded-full bg-card shadow-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </div>
+                        <span class="font-bold uppercase tracking-widest text-xs">Instagram</span>
+                    </a>
+                    <a href="#" class="group flex flex-col items-center gap-4">
+                        <div class="w-24 h-24 rounded-full bg-card shadow-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                        </div>
+                        <span class="font-bold uppercase tracking-widest text-xs">Twitter</span>
+                    </a>
+                    <a href="#" class="group flex flex-col items-center gap-4">
+                        <div class="w-24 h-24 rounded-full bg-card shadow-lg flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </div>
+                        <span class="font-bold uppercase tracking-widest text-xs">Facebook</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../src/components.js"></script>
+</body>
+
+</html>

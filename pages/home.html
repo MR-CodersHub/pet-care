@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawesome | Find the Best Spa & Care</title>
+    <!-- Note the path adjustment for pages/ directory -->
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-accent-cream text-dark antialiased">
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 overflow-hidden min-h-screen flex items-center">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-6 transform origin-top-right -z-10"></div>
+        <div class="absolute -top-24 -left-24 w-64 h-64 bg-accent-sage/10 rounded-full blur-3xl -z-10"></div>
+
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Text Content -->
+                <div class="w-full lg:w-1/2 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary-dark rounded-full text-sm font-bold tracking-wide uppercase">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                        </span>
+                        Trusted by 5,000+ Pet Parents
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-7xl font-heading font-bold leading-[1.1] text-dark">
+                        Giving Your Pets <br>
+                        <span class="text-primary italic">The Love</span> They Deserve.
+                    </h1>
+                    
+                    <p class="text-lg text-dark/70 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        From professional grooming to cozy boarding, we provide a safe and joyful environment where your furry friends feel right at home.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <button class="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-primary/20 hover:bg-primary-dark transition-all hover:scale-105">
+                            Explore Our Services
+                        </button>
+                        <button class="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary/20 rounded-2xl font-bold hover:bg-white transition-all group">
+                            <i data-lucide="play-circle" class="text-primary group-hover:scale-110 transition-transform"></i>
+                            Watch Story
+                        </button>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-8 pt-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="award" class="w-5 h-5"></i>
+                            <span class="text-xs font-bold uppercase tracking-widest">Certified Groomers</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="shield-check" class="w-5 h-5"></i>
+                            <span class="text-xs font-bold uppercase tracking-widest">Insured & Secure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Side -->
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-all duration-700 aspect-square lg:aspect-auto">
+                        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800" 
+                             alt="Happy Dog" 
+                             class="w-full h-full object-cover">
+                        <!-- Floating Card -->
+                        <div class="absolute bottom-6 left-6 right-6 bg-card/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-white/50 flex items-center gap-4 animate-bounce-slow">
+                            <div class="w-12 h-12 bg-accent-sage rounded-full flex items-center justify-center text-white">
+                                <i data-lucide="calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-dark/50 uppercase tracking-tighter">Next Available Slot</p>
+                                <p class="font-bold text-dark">Today, 4:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative blobs -->
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-2xl -z-10 animate-pulse"></div>
+                    <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-accent-teal/20 rounded-full blur-3xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Services Grid -->
+    <section id="services" class="py-24 bg-card">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                <div class="max-w-2xl space-y-4">
+                    <h2 class="text-4xl md:text-5xl font-heading font-bold">Services Tailored for <span class="text-primary italic">Happiness</span>.</h2>
+                    <p class="text-dark/60 text-lg">We provide everything your pet needs to thrive, from styling to health checkups.</p>
+                </div>
+                <a href="/pages/service.html" class="px-8 py-4 border-2 border-primary/20 rounded-2xl font-bold hover:bg-primary hover:text-white transition-all">View All Services</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group p-8 rounded-[2.5rem] bg-accent-cream hover:bg-primary transition-all duration-500 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-white/20 group-hover:text-white transition-colors">
+                        <i data-lucide="scissors"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4 group-hover:text-white">Grooming</h4>
+                    <p class="text-sm text-dark/60 group-hover:text-white/80 leading-relaxed">Professional baths, haircuts, and styling for all breeds.</p>
+                </div>
+                <div class="group p-8 rounded-[2.5rem] bg-accent-cream hover:bg-accent-teal transition-all duration-500 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-accent-teal mb-8 group-hover:bg-white/20 group-hover:text-white transition-colors">
+                        <i data-lucide="stethoscope"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4 group-hover:text-white">Health Care</h4>
+                    <p class="text-sm text-dark/60 group-hover:text-white/80 leading-relaxed">Vaccinations and routine health checkups by experts.</p>
+                </div>
+                <div class="group p-8 rounded-[2.5rem] bg-accent-cream hover:bg-dark transition-all duration-500 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-dark mb-8 group-hover:bg-white/20 group-hover:text-white transition-colors">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4 group-hover:text-white">Training</h4>
+                    <p class="text-sm text-dark/60 group-hover:text-white/80 leading-relaxed">Behavioral classes and puppy social skills training.</p>
+                </div>
+                <div class="group p-8 rounded-[2.5rem] bg-accent-cream hover:bg-accent-sage transition-all duration-500 hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-accent-sage mb-8 group-hover:bg-white/20 group-hover:text-white transition-colors">
+                        <i data-lucide="home"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-4 group-hover:text-white">Daycare</h4>
+                    <p class="text-sm text-dark/60 group-hover:text-white/80 leading-relaxed">Safe, supervised play areas for socialization and fun.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: How it Works (Interactive Steps) -->
+    <section class="py-24 bg-card">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="space-y-12">
+                    <div class="space-y-4">
+                        <h2 class="text-4xl md:text-5xl font-heading font-bold">Care Made <span class="text-primary italic">Simple</span>.</h2>
+                        <p class="text-dark/60 text-lg">We've streamlined the entire process so you can focus on playing with your pets.</p>
+                    </div>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-6 group">
+                            <div class="w-12 h-12 bg-primary text-white rounded-2xl flex items-center justify-center shrink-0 font-bold shadow-lg shadow-primary/20">1</div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-xl group-hover:text-primary transition-colors">Search & Discover</h4>
+                                <p class="text-dark/60 text-sm">Filter by service, location, and ratings to find the perfect professional for your pet.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group">
+                            <div class="w-12 h-12 bg-accent-teal text-white rounded-2xl flex items-center justify-center shrink-0 font-bold shadow-lg shadow-accent-teal/20">2</div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-xl group-hover:text-accent-teal transition-colors">Book Instantly</h4>
+                                <p class="text-dark/60 text-sm">Pick a time slot that works for you and complete your booking in under 60 seconds.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group">
+                            <div class="w-12 h-12 bg-accent-sage text-white rounded-2xl flex items-center justify-center shrink-0 font-bold shadow-lg shadow-accent-sage/20">3</div>
+                            <div class="space-y-2">
+                                <h4 class="font-bold text-xl group-hover:text-accent-sage transition-colors">Relax & Receive Updates</h4>
+                                <p class="text-dark/60 text-sm">Get real-time photos and status reports through the Pawesome app while your pet is in our care.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-accent-cream rounded-[4rem] p-4 shadow-inner">
+                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800" alt="Process" class="rounded-[3.5rem] shadow-2xl">
+                    </div>
+                    <!-- Stats Badge -->
+                    <div class="absolute -bottom-6 -right-6 bg-primary p-6 rounded-3xl shadow-2xl text-white space-y-1">
+                        <p class="text-2xl font-bold">99.8%</p>
+                        <p class="text-[10px] font-bold uppercase tracking-widest opacity-80">Parent Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Emergency Callout -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="bg-accent-teal rounded-[4rem] p-12 md:p-20 text-white flex flex-col md:flex-row items-center justify-between gap-10 relative overflow-hidden">
+                <div class="absolute inset-0 bg-black/5 -skew-x-12 translate-x-2/3"></div>
+                <div class="relative z-10 max-w-xl space-y-6">
+                    <h2 class="text-4xl md:text-5xl font-heading font-bold">Pet Emergency? <br>We're Ready <span class="text-dark italic">24/7</span>.</h2>
+                    <p class="text-white/70 text-lg">Don't wait. Our critical care unit is always staffed with expert vets and surgeons.</p>
+                </div>
+                <div class="relative z-10 flex flex-col sm:flex-row gap-4">
+                    <a href="tel:5550007297" class="bg-white text-accent-teal px-10 py-5 rounded-2xl font-bold shadow-2xl shadow-black/10 flex items-center gap-3 hover:scale-105 transition-all">
+                        <i data-lucide="phone-call" class="animate-bounce"></i> Call Now
+                    </a>
+                    <button class="border-2 border-white/30 px-10 py-5 rounded-2xl font-bold hover:bg-white hover:text-accent-teal transition-all">Find a Clinic</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../src/components.js"></script>
+</body>
+
+</html>

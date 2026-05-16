@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up | Pawesome</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-accent-cream text-dark antialiased">
+    <!-- Section 1: Split Screen Layout -->
+    <div class="min-h-screen flex flex-col lg:flex-row">
+        <!-- Brand/Hero Side -->
+        <div class="hidden lg:flex lg:w-1/2 bg-dark text-white p-20 flex-col justify-between relative overflow-hidden">
+            <div class="absolute inset-0 opacity-40">
+                <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px]"></div>
+            
+            <div class="relative z-10">
+                <a href="/" class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center text-white">
+                        <i data-lucide="paw-print"></i>
+                    </div>
+                    <span class="font-heading font-bold text-3xl tracking-tight">Pawesome</span>
+                </a>
+            </div>
+
+            <div class="relative z-10 space-y-6">
+                <h2 class="text-6xl font-heading font-bold leading-tight">Join the Most <br>Loved Pet <span class="text-primary italic">Community.</span></h2>
+                <p class="text-xl text-white/60 max-w-md">Manage your pet's health, book grooming, and connect with experts all in one place.</p>
+            </div>
+
+            <div class="relative z-10 flex gap-12">
+                <div>
+                    <p class="text-4xl font-bold">15k+</p>
+                    <p class="text-sm font-bold text-white/40 uppercase">Users</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold">4.9/5</p>
+                    <p class="text-sm font-bold text-white/40 uppercase">Rating</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="flex-1 flex items-center justify-center p-8 md:p-16">
+            <div class="w-full max-w-md space-y-10">
+                <!-- Section 2: Toggle Tabs -->
+                <div class="text-center lg:text-left space-y-4">
+                    <h1 class="text-4xl font-heading font-bold" id="auth-title">Welcome Back</h1>
+                    <p class="text-dark/40 font-medium" id="auth-subtitle">Please enter your details to sign in.</p>
+                </div>
+
+                <div class="flex bg-card p-1.5 rounded-2xl border border-dark/5 shadow-sm">
+                    <button class="flex-1 py-3 rounded-xl font-bold text-sm bg-primary text-white shadow-lg transition-all" id="btn-login">Login</button>
+                    <button class="flex-1 py-3 rounded-xl font-bold text-sm text-dark/40 hover:text-dark transition-all" id="btn-register">Register</button>
+                </div>
+
+                <!-- Section 3: Auth Form -->
+                <form class="space-y-6" id="auth-form">
+                    <!-- Name field (hidden in login) -->
+                    <div class="space-y-2 hidden" id="name-field">
+                        <label class="text-[10px] font-bold uppercase tracking-widest text-dark/40">Full Name</label>
+                        <div class="relative">
+                            <i data-lucide="user" class="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-dark/20"></i>
+                            <input type="text" placeholder="John Doe" class="w-full bg-card border border-dark/5 rounded-2xl pl-14 pr-6 py-4 outline-none focus:border-primary transition-all">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-bold uppercase tracking-widest text-dark/40">Email Address</label>
+                        <div class="relative">
+                            <i data-lucide="mail" class="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-dark/20"></i>
+                            <input type="email" placeholder="hello@pawesome.care" class="w-full bg-card border border-dark/5 rounded-2xl pl-14 pr-6 py-4 outline-none focus:border-primary transition-all">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <label class="text-[10px] font-bold uppercase tracking-widest text-dark/40">Password</label>
+                            <a href="#" class="text-[10px] font-bold text-primary hover:underline">Forgot?</a>
+                        </div>
+                        <div class="relative">
+                            <i data-lucide="lock" class="absolute left-5 top-1/2 -translate-y-1/2 w-4 h-4 text-dark/20"></i>
+                            <input type="password" placeholder="••••••••" class="w-full bg-card border border-dark/5 rounded-2xl pl-14 pr-6 py-4 outline-none focus:border-primary transition-all">
+                            <button type="button" class="absolute right-5 top-1/2 -translate-y-1/2 text-dark/20 hover:text-dark">
+                                <i data-lucide="eye" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" class="w-4 h-4 rounded border-dark/10 text-primary focus:ring-primary">
+                        <span class="text-sm font-medium text-dark/60">Remember for 30 days</span>
+                    </div>
+
+                    <button class="w-full bg-primary text-white py-5 rounded-2xl font-bold shadow-xl shadow-primary/20 hover:bg-primary-dark transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+                        Sign In
+                    </button>
+                </form>
+
+                <!-- Section 4: Social Auth -->
+                <div class="space-y-6">
+                    <div class="relative flex items-center justify-center">
+                        <div class="w-full h-[1px] bg-dark/5"></div>
+                        <span class="absolute bg-accent-cream px-4 text-[10px] font-bold text-dark/30 uppercase tracking-widest">Or continue with</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <button class="flex items-center justify-center gap-3 py-4 bg-card border border-dark/5 rounded-2xl font-bold text-sm hover:bg-accent-cream transition-all">
+                            <i data-lucide="github" class="w-5 h-5"></i> GitHub
+                        </button>
+                        <button class="flex items-center justify-center gap-3 py-4 bg-card border border-dark/5 rounded-2xl font-bold text-sm hover:bg-accent-cream transition-all">
+                            <i data-lucide="globe" class="w-5 h-5"></i> Google
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Section 5: Footer Links -->
+                <p class="text-center text-sm font-medium text-dark/60">
+                    Don't have an account? <a href="#" class="text-primary font-bold hover:underline" id="link-toggle">Create one for free</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        const btnLogin = document.getElementById('btn-login');
+        const btnRegister = document.getElementById('btn-register');
+        const authTitle = document.getElementById('auth-title');
+        const authSubtitle = document.getElementById('auth-subtitle');
+        const nameField = document.getElementById('name-field');
+        const linkToggle = document.getElementById('link-toggle');
+
+        function setMode(mode) {
+            if (mode === 'register') {
+                btnLogin.classList.remove('bg-primary', 'text-white', 'shadow-lg');
+                btnLogin.classList.add('text-dark/40');
+                btnRegister.classList.add('bg-primary', 'text-white', 'shadow-lg');
+                btnRegister.classList.remove('text-dark/40');
+                authTitle.innerText = "Create Account";
+                authSubtitle.innerText = "Join our community today.";
+                nameField.classList.remove('hidden');
+                linkToggle.innerText = "Sign in to existing account";
+            } else {
+                btnRegister.classList.remove('bg-primary', 'text-white', 'shadow-lg');
+                btnRegister.classList.add('text-dark/40');
+                btnLogin.classList.add('bg-primary', 'text-white', 'shadow-lg');
+                btnLogin.classList.remove('text-dark/40');
+                authTitle.innerText = "Welcome Back";
+                authSubtitle.innerText = "Please enter your details to sign in.";
+                nameField.classList.add('hidden');
+                linkToggle.innerText = "Create one for free";
+            }
+            lucide.createIcons();
+        }
+
+        btnLogin.addEventListener('click', () => setMode('login'));
+        btnRegister.addEventListener('click', () => setMode('register'));
+        linkToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            const isLogin = authTitle.innerText.includes("Welcome");
+            setMode(isLogin ? 'register' : 'login');
+        });
+    </script>
+</body>
+
+</html>
