@@ -6,10 +6,8 @@ const components = {
             <div class="flex items-center justify-between bg-card/70 backdrop-blur-md px-6 py-3 rounded-2xl shadow-sm border border-white/20">
                 <!-- Logo -->
                 <a href="index.html" class="flex items-center gap-2">
-                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white">
-                        <i data-lucide="paw-print"></i>
-                    </div>
-                    <span class="font-heading text-xl font-bold tracking-tight">Paw<span class="text-primary">esome</span></span>
+                    <img src="assets/images/brand-logo.png" alt="Pawesome Logo" class="h-10 w-10 object-contain">
+                    <span class="font-heading text-xl font-bold tracking-tight text-dark">Paw<span class="text-primary">esome</span></span>
                 </a>
 
                 <!-- Desktop Menu -->
@@ -65,10 +63,8 @@ const components = {
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div class="space-y-6">
                     <a href="index.html" class="flex items-center gap-2">
-                        <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white">
-                            <i data-lucide="paw-print"></i>
-                        </div>
-                        <span class="font-heading text-xl font-bold tracking-tight">Paw<span class="text-primary">esome</span></span>
+                        <img src="assets/images/brand-logo.png" alt="Pawesome Logo" class="h-10 w-10 object-contain">
+                        <span class="font-heading text-xl font-bold tracking-tight text-dark">Paw<span class="text-primary">esome</span></span>
                     </a>
                     <p class="text-dark/60 dark:text-white/60 leading-relaxed">
                         Providing world-class pet care services since 2010. Your pet's happiness is our top priority.
@@ -143,10 +139,11 @@ function initApp() {
     if (navPlaceholder) navPlaceholder.innerHTML = components.navbar;
     if (footerPlaceholder) footerPlaceholder.innerHTML = components.footer;
 
-    // Normalize component links when inside the pages folder
+    // Normalize component links and images when inside the pages folder
     const currentPath = window.location.pathname;
     const isPagesPage = currentPath.split('/').includes('pages');
     if (isPagesPage) {
+        // Fix links
         const allLinks = document.querySelectorAll('#main-nav a, footer a');
         allLinks.forEach(link => {
             const href = link.getAttribute('href');
@@ -155,6 +152,15 @@ function initApp() {
                 link.setAttribute('href', '../index.html');
             } else if (href.startsWith('pages/')) {
                 link.setAttribute('href', href.replace(/^pages\//, ''));
+            }
+        });
+        
+        // Fix image paths
+        const allImages = document.querySelectorAll('#main-nav img, footer img');
+        allImages.forEach(img => {
+            const src = img.getAttribute('src');
+            if (src && src.startsWith('assets/')) {
+                img.setAttribute('src', '../' + src);
             }
         });
     }
