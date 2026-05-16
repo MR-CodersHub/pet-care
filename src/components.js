@@ -14,12 +14,12 @@ const components = {
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center gap-8 font-medium">
-                    <a href="/index.html" class="hover:text-primary transition-colors">Home</a>
-                    <a href="/pages/home.html" class="hover:text-primary transition-colors">Home 2</a>
-                    <a href="/pages/about.html" class="hover:text-primary transition-colors">About</a>
-                    <a href="/pages/service.html" class="hover:text-primary transition-colors">Services</a>
-                    <a href="/pages/blog.html" class="hover:text-primary transition-colors">Blog</a>
-                    <a href="/pages/contact.html" class="hover:text-primary transition-colors">Contact</a>
+                    <a href="./index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="../pages/home2.html" class="hover:text-primary transition-colors">Home 2</a>
+                    <a href="../pages/about.html" class="hover:text-primary transition-colors">About</a>
+                    <a href="../pages/service.html" class="hover:text-primary transition-colors">Services</a>
+                    <a href="../pages/blog.html" class="hover:text-primary transition-colors">Blog</a>
+                    <a href="../pages/contact.html" class="hover:text-primary transition-colors">Contact</a>
                 </div>
 
                 <!-- Tools & CTA -->
@@ -66,13 +66,13 @@ const components = {
 
             <!-- Mobile Menu Dropdown -->
             <div id="mobile-menu" class="hidden lg:hidden absolute top-20 bg-card border border-dark/5 shadow-2xl rounded-2xl p-6 flex flex-col gap-4 font-medium text-center z-40 origin-top animate-in fade-in zoom-in-95 duration-200" style="left: 1rem; right: 1rem; width: calc(100% - 2rem);">
-                <a href="/index.html" class="block py-2 hover:text-primary transition-colors">Home</a>
-                <a href="/pages/home.html" class="block py-2 hover:text-primary transition-colors">Home 2</a>
-                <a href="/pages/about.html" class="block py-2 hover:text-primary transition-colors">About</a>
-                <a href="/pages/service.html" class="block py-2 hover:text-primary transition-colors">Services</a>
-                <a href="/pages/blog.html" class="block py-2 hover:text-primary transition-colors">Blog</a>
-                <a href="/pages/contact.html" class="block py-2 hover:text-primary transition-colors">Contact</a>
-                <a href="/pages/booking.html" class="sm:hidden block py-3 mt-2 bg-primary text-white rounded-xl hover:bg-primary-dark transition-colors">Book Now</a>
+                <a href="./index.html" class="block py-2 hover:text-primary transition-colors">Home</a>
+                <a href="./pages/home.html" class="block py-2 hover:text-primary transition-colors">Home 2</a>
+                <a href="./pages/about.html" class="block py-2 hover:text-primary transition-colors">About</a>
+                <a href="./pages/service.html" class="block py-2 hover:text-primary transition-colors">Services</a>
+                <a href="./pages/blog.html" class="block py-2 hover:text-primary transition-colors">Blog</a>
+                <a href="./pages/contact.html" class="block py-2 hover:text-primary transition-colors">Contact</a>
+                <a href="./pages/booking.html" class="sm:hidden block py-3 mt-2 bg-primary text-white rounded-xl hover:bg-primary-dark transition-colors">Book Now</a>
             </div>
         </div>
     </nav>
