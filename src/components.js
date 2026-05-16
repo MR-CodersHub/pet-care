@@ -5,7 +5,7 @@ const components = {
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between bg-card/70 backdrop-blur-md px-6 py-3 rounded-2xl shadow-sm border border-white/20">
                 <!-- Logo -->
-                <a href="/" class="flex items-center gap-2">
+                <a href="index.html" class="flex items-center gap-2">
                     <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white">
                         <i data-lucide="paw-print"></i>
                     </div>
@@ -14,12 +14,12 @@ const components = {
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center gap-8 font-medium">
-                    <a href="/index.html" class="hover:text-primary transition-colors">Home</a>
-                    <a href="/pages/home.html" class="hover:text-primary transition-colors">Home 2</a>
-                    <a href="/pages/about.html" class="hover:text-primary transition-colors">About</a>
-                    <a href="/pages/service.html" class="hover:text-primary transition-colors">Services</a>
-                    <a href="/pages/blog.html" class="hover:text-primary transition-colors">Blog</a>
-                    <a href="/pages/contact.html" class="hover:text-primary transition-colors">Contact</a>
+                    <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="pages/home.html" class="hover:text-primary transition-colors">Home 2</a>
+                    <a href="pages/about.html" class="hover:text-primary transition-colors">About</a>
+                    <a href="pages/service.html" class="hover:text-primary transition-colors">Services</a>
+                    <a href="pages/blog.html" class="hover:text-primary transition-colors">Blog</a>
+                    <a href="pages/contact.html" class="hover:text-primary transition-colors">Contact</a>
                 </div>
 
                 <!-- Tools & CTA -->
@@ -41,20 +41,13 @@ const components = {
                         </button>
                         <!-- Dropdown Menu -->
                         <div id="profile-menu" class="absolute right-0 mt-3 w-56 bg-card border border-dark/5 rounded-2xl shadow-2xl py-2 hidden animate-in fade-in zoom-in duration-200">
-                            <a href="/pages/login.html" class="flex items-center gap-3 px-4 py-3 hover:bg-primary/5 hover:text-primary transition-all font-medium">
+                            <a href="pages/login.html" class="flex items-center gap-3 px-4 py-3 hover:bg-primary/5 hover:text-primary transition-all font-medium">
                                 <i data-lucide="log-in" class="w-4 h-4"></i> Login / Signup
-                            </a>
-                            <div class="h-[1px] bg-dark/5 mx-4 my-1"></div>
-                            <a href="/pages/admin.html" class="flex items-center gap-3 px-4 py-3 hover:bg-primary/5 hover:text-primary transition-all font-medium">
-                                <i data-lucide="layout-dashboard" class="w-4 h-4"></i> Admin Dashboard
-                            </a>
-                            <a href="/pages/user-dashboard.html" class="flex items-center gap-3 px-4 py-3 hover:bg-primary/5 hover:text-primary transition-all font-medium">
-                                <i data-lucide="user-cog" class="w-4 h-4"></i> User Dashboard
                             </a>
                         </div>
                     </div>
                     
-                    <a href="/pages/booking.html" class="hidden sm:block bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-xl font-semibold shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5">
+                    <a href="pages/booking.html" class="hidden sm:block bg-primary hover:bg-primary-dark text-white px-6 py-2.5 rounded-xl font-semibold shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5">
                         Book Now
                     </a>
                     <!-- Mobile Menu Toggle -->
@@ -71,7 +64,7 @@ const components = {
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div class="space-y-6">
-                    <a href="/" class="flex items-center gap-2">
+                    <a href="index.html" class="flex items-center gap-2">
                         <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white">
                             <i data-lucide="paw-print"></i>
                         </div>
@@ -97,23 +90,23 @@ const components = {
                     <h4 class="font-heading font-bold text-lg mb-6 dark:text-white">Quick Links</h4>
                     <ul class="space-y-4 text-dark/60 dark:text-white/40">
                         <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
-                        <li><a href="/pages/home2.html" class="hover:text-primary transition-colors">Home 2</a></li>
-                        <li><a href="/pages/about.html" class="hover:text-primary transition-colors">About Us</a></li>
-                        <li><a href="/pages/service.html" class="hover:text-primary transition-colors">Our Services</a></li>
-                        <li><a href="/pages/blog.html" class="hover:text-primary transition-colors">Latest News</a></li>
-                        <li><a href="/pages/contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+                        <li><a href="pages/home2.html" class="hover:text-primary transition-colors">Home 2</a></li>
+                        <li><a href="pages/about.html" class="hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="pages/service.html" class="hover:text-primary transition-colors">Our Services</a></li>
+                        <li><a href="pages/blog.html" class="hover:text-primary transition-colors">Latest News</a></li>
+                        <li><a href="pages/contact.html" class="hover:text-primary transition-colors">Contact</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="font-heading font-bold text-lg mb-6 dark:text-white">Services</h4>
                     <ul class="space-y-4 text-dark/60 dark:text-white/40">
-                        <li><a href="/pages/grooming.html" class="hover:text-primary transition-colors">Pet Grooming</a></li>
-                        <li><a href="/pages/training.html" class="hover:text-primary transition-colors">Dog Training</a></li>
-                        <li><a href="/pages/veterinary.html" class="hover:text-primary transition-colors">Veterinary Care</a></li>
-                        <li><a href="/pages/daycare.html" class="hover:text-primary transition-colors">Pet Daycare</a></li>
-                        <li><a href="/pages/dental.html" class="hover:text-primary transition-colors">Dental Hygiene</a></li>
-                        <li><a href="/pages/emergency.html" class="hover:text-primary transition-colors">24/7 Emergency</a></li>
+                        <li><a href="pages/grooming.html" class="hover:text-primary transition-colors">Pet Grooming</a></li>
+                        <li><a href="pages/training.html" class="hover:text-primary transition-colors">Dog Training</a></li>
+                        <li><a href="pages/veterinary.html" class="hover:text-primary transition-colors">Veterinary Care</a></li>
+                        <li><a href="pages/daycare.html" class="hover:text-primary transition-colors">Pet Daycare</a></li>
+                        <li><a href="pages/dental.html" class="hover:text-primary transition-colors">Dental Hygiene</a></li>
+                        <li><a href="pages/emergency.html" class="hover:text-primary transition-colors">24/7 Emergency</a></li>
                     </ul>
                 </div>
 
@@ -132,9 +125,9 @@ const components = {
             <div class="pt-8 border-t border-dark/5 dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-dark/40 dark:text-white/40">
                 <p>© 2024 Pawesome Pet Care. All rights reserved.</p>
                 <div class="flex gap-6">
-                    <a href="/pages/faq.html" class="hover:text-primary">FAQ</a>
-                    <a href="/pages/policy.html" class="hover:text-primary">Privacy Policy</a>
-                    <a href="/pages/terms.html" class="hover:text-primary">Terms of Service</a>
+                    <a href="pages/faq.html" class="hover:text-primary">FAQ</a>
+                    <a href="pages/policy.html" class="hover:text-primary">Privacy Policy</a>
+                    <a href="pages/terms.html" class="hover:text-primary">Terms of Service</a>
                 </div>
             </div>
         </div>
@@ -150,8 +143,23 @@ function initApp() {
     if (navPlaceholder) navPlaceholder.innerHTML = components.navbar;
     if (footerPlaceholder) footerPlaceholder.innerHTML = components.footer;
 
-    // Active State Logic
+    // Normalize component links when inside the pages folder
     const currentPath = window.location.pathname;
+    const isPagesPage = currentPath.split('/').includes('pages');
+    if (isPagesPage) {
+        const allLinks = document.querySelectorAll('#main-nav a, footer a');
+        allLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:')) return;
+            if (href === 'index.html') {
+                link.setAttribute('href', '../index.html');
+            } else if (href.startsWith('pages/')) {
+                link.setAttribute('href', href.replace(/^pages\//, ''));
+            }
+        });
+    }
+
+    // Active State Logic
     const navLinks = document.querySelectorAll('#main-nav a');
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
@@ -160,7 +168,7 @@ function initApp() {
         // Check if the link href matches the current path
         const isExactMatch = currentPath.endsWith(href) || (currentPath.endsWith('/') && href.endsWith('index.html'));
         const isBlogDetail = currentPath.includes('/blogs/') && href.includes('blog.html');
-        const isHomeMatch = (currentPath.endsWith('/') || currentPath.endsWith('index.html')) && (href === '/index.html' || href === '/');
+        const isHomeMatch = (currentPath.endsWith('/') || currentPath.endsWith('index.html')) && (href === 'index.html' || href === '/');
 
         if (isExactMatch || isBlogDetail || isHomeMatch) {
             link.classList.add('text-primary', 'font-bold');
