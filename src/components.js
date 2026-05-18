@@ -102,7 +102,7 @@ const components = {
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden mt-3 bg-card border border-dark/10 rounded-2xl p-5 shadow-xl flex flex-col gap-4"
+        class="hidden md:hidden mt-3 bg-card border border-dark/10 rounded-2xl p-6 shadow-xl flex flex-col gap-4"
       >
 
         <a href="${ROOT}index.html">Home</a>
