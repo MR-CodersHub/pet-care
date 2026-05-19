@@ -82,7 +82,7 @@ const components = {
           <!-- Book -->
           <a
             href="${PAGES}booking.html"
-            class="hidden sm:block bg-primary text-white px-5 py-2 rounded-xl"
+            class="hidden sm:block bg-primary text-white px-6 py-2 rounded-xl"
           >
             Book Now
           </a>
@@ -134,36 +134,82 @@ const components = {
   // ================= FOOTER =================
 
   footer: `
-  <footer class="bg-card pt-20 pb-10 border-t border-dark/5">
-
-    <div class="container mx-auto px-6">
-
-      <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-dark/50">
-
-        <p>
-          © 2024 Pawesome Pet Care
-        </p>
-
-        <div class="flex gap-6">
-
-          <a href="${PAGES}faq.html">
-            FAQ
+  <footer class="bg-[#1a1a1a] dark:bg-card  pt-24 pb-12 mt-20 rounded-t-[4rem] relative overflow-hidden">
+    <!-- Background Decorations -->
+    <div class="absolute top-0 left-0 w-96 h-96 bg-primary/20 rounded-full blur-[100px] -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-accent-teal/10 rounded-full blur-[100px] translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+      
+      <!-- Top Section: 4 Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-16">
+        
+        <!-- Column 1: Brand -->
+        <div class="space-y-6">
+          <a href="${ROOT}index.html" class="flex items-center gap-2">
+            <div class="p-2 rounded-xl">
+              <img src="${ROOT}assets/images/brand-logo.png" alt="Logo" class="h-8 w-8 object-contain">
+            </div>
+            <span class="font-heading text-2xl font-bold ">Paw<span class="text-primary">esome</span></span>
           </a>
+          <p class="text-sm leading-relaxed max-w-xs">
+            Premium pet care services delivering happiness, health, and wagging tails to your furry friends every single day.
+          </p>
+        </div>
 
-          <a href="${PAGES}policy.html">
-            Privacy
-          </a>
+        <!-- Column 2: Quick Links -->
+        <div class="space-y-6">
+          <h4 class="text-lg font-bold ">Explore</h4>
+          <ul class="space-y-4 text-sm">
+            <li><a href="${ROOT}index.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Home</a></li>
+            <li><a href="${PAGES}home.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Home 2</a></li>
+            <li><a href="${PAGES}about.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> About Us</a></li>
+            <li><a href="${PAGES}service.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Services</a></li>
+            <li><a href="${PAGES}blog.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Pet Blog</a></li>
+            <li><a href="${PAGES}contact.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Contact</a></li>
+          </ul>
+        </div>
 
-          <a href="${PAGES}terms.html">
-            Terms
-          </a>
+        <!-- Column 3: Services -->
+        <div class="space-y-6">
+          <h4 class="text-lg font-bold ">Services</h4>
+          <ul class="space-y-4 text-sm">
+            <li><a href="${PAGES}grooming.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Pet Grooming</a></li>
+            <li><a href="${PAGES}daycare.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Pet Daycare</a></li>
+            <li><a href="${PAGES}veterinary.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Vet Consultations</a></li>
+            <li><a href="${PAGES}dental.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Dental Care</a></li>
+          </ul>
+        </div>
 
+        <!-- Column 4: Contact & Newsletter -->
+        <div class="space-y-6">
+          <h4 class="text-lg font-bold ">Stay Updated</h4>
+          <p class="text-sm">Subscribe for pet care tips and special offers.</p>
+          <div class="flex items-center bg-white/5 rounded-2xl p-1 border border-white/10 focus-within:border-primary transition-colors">
+            <input type="email" placeholder="Email address" class="bg-transparent text-sm w-full px-4 outline-none text-white placeholder:text-white/30">
+            <button class="bg-primary hover:bg-primary-dark text-white p-3 rounded-xl transition-colors">
+              <i data-lucide="send" class="w-4 h-4"></i>
+            </button>
+          </div>
+          <div class="space-y-2 mt-4 text-sm">
+            <p class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-primary"></i> +1 (555) 123-4567</p>
+            <p class="flex items-center gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-primary"></i> 123 Paws Avenue, NY</p>
+          </div>
         </div>
 
       </div>
 
-    </div>
+      <!-- Bottom Section -->
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium">
+        <p>© 2024 Pawesome Pet Care. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="${PAGES}faq.html" class="hover:text-white transition-colors">FAQ</a>
+          <a href="${PAGES}policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="${PAGES}terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
 
+    </div>
   </footer>
   `
 };
