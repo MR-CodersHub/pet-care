@@ -33,7 +33,7 @@
 
   /* Dark mode global overrides for hardcoded classes */
   .dark .bg-white { @apply bg-card; }
-  .dark .text-dark { @apply text-main; }
+  .dark .text-dark { color: rgb(var(--text-main)); }
   .dark .border-dark\/5 { border-color: rgba(var(--border)); }
   .dark .border-dark\/10 { border-color: rgba(255, 255, 255, 0.15); }
   .dark .bg-accent-cream { background-color: rgb(var(--bg-main)); }
@@ -42,8 +42,15 @@
   .dark .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5); }
   .dark .shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.7); }
 
-  /* Typography dark mode support */
-  .dark .prose { @apply prose-invert; }
+  .dark .prose {
+    color: rgb(var(--text-main));
+  }
+  .dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4 {
+    color: #fff;
+  }
+  .dark .prose p {
+    color: rgba(var(--text-main) / 0.8);
+  }
   
   /* Button contrast fixes */
   .dark .bg-primary { @apply shadow-primary/10; }
@@ -56,12 +63,22 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+    @apply font-heading font-semibold;
+  }
+
+  p {
+    @apply font-medium;
   }
 
   /* RTL Support */
   [dir="rtl"] {
     @apply text-right;
+  }
+  [dir="rtl"] [data-lucide="chevron-right"],
+  [dir="rtl"] [data-lucide="chevron-left"],
+  [dir="rtl"] [data-lucide="arrow-right"],
+  [dir="rtl"] [data-lucide="arrow-left"] {
+    transform: scaleX(-1);
   }
 }
 

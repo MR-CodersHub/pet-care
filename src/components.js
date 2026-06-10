@@ -40,7 +40,7 @@ const components = {
         </a>
 
         <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center gap-8 font-medium">
+        <div class="hidden lg:flex items-center gap-8 font-medium">
 
           <a href="${ROOT}index.html" class="nav-link">
             Home
@@ -58,8 +58,12 @@ const components = {
             Services
           </a>
 
-          <a href="${PAGES}blog.html" class="nav-link">
-            Blog
+          <a href="${PAGES}packages.html" class="nav-link">
+            Packages
+          </a>
+
+          <a href="${PAGES}pet-care-guide.html" class="nav-link">
+            Care Guide
           </a>
 
           <a href="${PAGES}contact.html" class="nav-link">
@@ -70,6 +74,15 @@ const components = {
 
         <!-- Right Side -->
         <div class="flex items-center gap-2">
+
+          <!-- RTL Toggle -->
+          <button
+            id="rtl-toggle"
+            class="p-2 hover:bg-primary/10 rounded-xl text-xs font-bold px-3 border border-dark/10 dark:border-white/10 tracking-wider transition-all"
+            title="Toggle LTR/RTL"
+          >
+            RTL
+          </button>
 
           <!-- Theme -->
           <button
@@ -90,7 +103,7 @@ const components = {
           <!-- Mobile Toggle -->
           <button
             id="mobile-menu-btn"
-            class="md:hidden p-2 hover:bg-primary/10 rounded-xl"
+            class="lg:hidden p-2 hover:bg-primary/10 rounded-xl"
           >
             <i data-lucide="menu"></i>
           </button>
@@ -102,7 +115,7 @@ const components = {
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden mt-3 bg-card border border-dark/10 rounded-2xl p-6 shadow-xl flex flex-col gap-4"
+        class="hidden lg:hidden mt-3 bg-card border border-dark/10 rounded-2xl p-6 shadow-xl flex flex-col gap-4"
       >
 
         <a href="${ROOT}index.html">Home</a>
@@ -113,7 +126,9 @@ const components = {
 
         <a href="${PAGES}service.html">Services</a>
 
-        <a href="${PAGES}blog.html">Blog</a>
+        <a href="${PAGES}packages.html">Packages</a>
+
+        <a href="${PAGES}pet-care-guide.html">Pet Care Guide</a>
 
         <a href="${PAGES}contact.html">Contact</a>
 
@@ -165,7 +180,8 @@ const components = {
             <li><a href="${PAGES}home.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Home 2</a></li>
             <li><a href="${PAGES}about.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> About Us</a></li>
             <li><a href="${PAGES}service.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Services</a></li>
-            <li><a href="${PAGES}blog.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Pet Blog</a></li>
+            <li><a href="${PAGES}packages.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Packages</a></li>
+            <li><a href="${PAGES}pet-care-guide.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Pet Care Guide</a></li>
             <li><a href="${PAGES}contact.html" class="hover:text-primary transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Contact</a></li>
           </ul>
         </div>
@@ -220,6 +236,10 @@ const components = {
 
 function initApp() {
 
+  // Load RTL early
+  const savedDir = localStorage.getItem("dir") || "ltr";
+  document.documentElement.setAttribute("dir", savedDir);
+
   // Inject Navbar/Footer
 
   const navbarPlaceholder =
@@ -234,6 +254,21 @@ function initApp() {
 
   if (footerPlaceholder) {
     footerPlaceholder.innerHTML = components.footer;
+  }
+
+  // =========================
+  // RTL TOGGLE
+  // =========================
+  const rtlToggle = document.getElementById("rtl-toggle");
+  if (rtlToggle) {
+    rtlToggle.textContent = savedDir === "rtl" ? "LTR" : "RTL";
+    rtlToggle.addEventListener("click", () => {
+      const isRtl = document.documentElement.getAttribute("dir") === "rtl";
+      const newDir = isRtl ? "ltr" : "rtl";
+      document.documentElement.setAttribute("dir", newDir);
+      localStorage.setItem("dir", newDir);
+      rtlToggle.textContent = newDir === "rtl" ? "LTR" : "RTL";
+    });
   }
 
   // =========================
