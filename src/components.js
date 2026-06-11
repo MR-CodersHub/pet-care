@@ -20,20 +20,20 @@ const components = {
   navbar: `
   <nav class="fixed top-0 left-0 w-full z-50" id="main-nav">
 
-    <div class="container mx-auto px-6 py-4">
+    <div class="container mx-auto px-4 sm:px-6 py-4">
 
-      <div class="flex items-center justify-between bg-card/70 backdrop-blur-md px-6 py-3 rounded-2xl shadow-sm border border-white/20">
+      <div class="flex items-center justify-between bg-card/70 backdrop-blur-md px-3 sm:px-6 py-3 rounded-2xl shadow-sm border border-white/20">
 
         <!-- Logo -->
-        <a href="${ROOT}index.html" class="flex items-center gap-2">
+        <a href="${ROOT}index.html" class="flex items-center gap-1 sm:gap-2">
 
           <img
             src="${ROOT}assets/images/brand-logo.png"
             alt="Logo"
-            class="h-10 w-10 object-contain"
+            class="h-8 w-8 sm:h-10 sm:w-10 object-contain"
           >
 
-          <span class="font-heading text-xl font-bold">
+          <span class="font-heading text-lg sm:text-xl font-bold">
             Paw<span class="text-primary">esome</span>
           </span>
 
@@ -73,12 +73,12 @@ const components = {
         </div>
 
         <!-- Right Side -->
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-1 sm:gap-2">
 
           <!-- RTL Toggle -->
           <button
             id="rtl-toggle"
-            class="p-2 hover:bg-primary/10 rounded-xl text-xs font-bold px-3 border border-dark/10 dark:border-white/10 tracking-wider transition-all"
+            class="p-1.5 sm:p-2 hover:bg-primary/10 rounded-xl text-[10px] sm:text-xs font-bold px-2 sm:px-3 border border-dark/10 dark:border-white/10 tracking-wider transition-all"
             title="Toggle LTR/RTL"
           >
             RTL
@@ -87,9 +87,9 @@ const components = {
           <!-- Theme -->
           <button
             id="theme-toggle"
-            class="p-2 hover:bg-primary/10 rounded-xl"
+            class="p-1.5 sm:p-2 hover:bg-primary/10 rounded-xl"
           >
-            <i data-lucide="moon"></i>
+            <i data-lucide="moon" class="w-4 h-4 sm:w-6 sm:h-6"></i>
           </button>
 
           <!-- Book -->
@@ -103,9 +103,9 @@ const components = {
           <!-- Mobile Toggle -->
           <button
             id="mobile-menu-btn"
-            class="lg:hidden p-2 hover:bg-primary/10 rounded-xl"
+            class="lg:hidden p-1.5 sm:p-2 hover:bg-primary/10 rounded-xl"
           >
-            <i data-lucide="menu"></i>
+            <i data-lucide="menu" class="w-4 h-4 sm:w-6 sm:h-6"></i>
           </button>
 
         </div>
@@ -149,7 +149,7 @@ const components = {
   // ================= FOOTER =================
 
   footer: `
-  <footer class="bg-[#1a1a1a] dark:bg-card  pt-24 pb-12 mt-20 rounded-t-[4rem] relative overflow-hidden">
+  <footer class="bg-[#1a1a1a] dark:bg-card text-white  pt-24 pb-12 mt-20 rounded-t-[4rem] relative overflow-hidden">
     <!-- Background Decorations -->
     <div class="absolute top-0 left-0 w-96 h-96 bg-primary/20 rounded-full blur-[100px] -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
     <div class="absolute bottom-0 right-0 w-96 h-96 bg-accent-teal/10 rounded-full blur-[100px] translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
