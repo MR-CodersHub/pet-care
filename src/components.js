@@ -40,7 +40,7 @@ const components = {
         </a>
 
         <!-- Desktop Menu -->
-        <div class="hidden lg:flex items-center gap-8 font-medium">
+        <div class="hidden xl:flex items-center gap-8 font-medium">
 
           <a href="${ROOT}index.html" class="nav-link">
             Home
@@ -103,7 +103,7 @@ const components = {
           <!-- Mobile Toggle -->
           <button
             id="mobile-menu-btn"
-            class="lg:hidden p-1.5 sm:p-2 hover:bg-primary/10 rounded-xl"
+            class="xl:hidden p-1.5 sm:p-2 hover:bg-primary/10 rounded-xl"
           >
             <i data-lucide="menu" class="w-4 h-4 sm:w-6 sm:h-6"></i>
           </button>
@@ -115,7 +115,7 @@ const components = {
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="hidden lg:hidden mt-3 bg-card border border-dark/10 rounded-2xl p-6 shadow-xl flex flex-col gap-4"
+        class="hidden xl:hidden mt-3 bg-card border border-dark/10 rounded-2xl p-6 shadow-xl flex flex-col gap-4"
       >
 
         <a href="${ROOT}index.html">Home</a>
